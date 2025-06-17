@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>HOW HARD</title>
+  <style>
+    body {
+      background-color: #fff8dc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 40px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      color: #d4af37;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .search-bar input {
+      padding: 8px 12px;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .game-list {
+      flex: 2;
+    }
+
+    .game {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .game img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .game-info {
+      flex-grow: 1;
+    }
+
+    .game-info h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .note {
+      font-weight: bold;
+      color: #444;
+      margin-top: 5px;
+    }
+
+    .description {
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 5px;
+    }
+
+    .placeholder-box {
+      flex: 1;
+      background-color: #f0e8cc;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 0.95em;
+      color: #555;
+      height: fit-content;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <img src="ChatGPT Image 17 de jun. de 2025, 14_55_32.png" alt="Logo HOW HARD">
+      <div style="display: flex; flex-direction: column;">
+      <h1>HOW HARD</h1>
+      <p style="color:#ccc; font-size:0.95em; margin-top:5px;">Análise de dificuldade feita por jogadores.</p>
+    </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar jogo..." onkeyup="searchGames()">
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="game-list" id="gameList">
+      
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Counter-Strike 2">
+      <div class="game-info">
+        <h2>Counter-Strike 2</h2>
+        <div class="note">9/10</div>
+        <div class="description">Counter-Strike 2 é um dos jogos mais populares de 2024, disponível para Counter-Strike 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Dota 2">
+      <div class="game-info">
+        <h2>Dota 2</h2>
+        <div class="note">1/10</div>
+        <div class="description">Dota 2 é um dos jogos mais populares de 2024, disponível para Dota 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="PUBG: Battlegrounds">
+      <div class="game-info">
+        <h2>PUBG: Battlegrounds</h2>
+        <div class="note">5/10</div>
+        <div class="description">PUBG: Battlegrounds é um dos jogos mais populares de 2024, disponível para PUBG: Battlegrounds.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Apex Legends">
+      <div class="game-info">
+        <h2>Apex Legends</h2>
+        <div class="note">9/10</div>
+        <div class="description">Apex Legends é um dos jogos mais populares de 2024, disponível para Apex Legends.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Rust">
+      <div class="game-info">
+        <h2>Rust</h2>
+        <div class="note">4/10</div>
+        <div class="description">Rust é um dos jogos mais populares de 2024, disponível para Rust.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Path of Exile">
+      <div class="game-info">
+        <h2>Path of Exile</h2>
+        <div class="note">3/10</div>
+        <div class="description">Path of Exile é um dos jogos mais populares de 2024, disponível para Path of Exile.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Palworld">
+      <div class="game-info">
+        <h2>Palworld</h2>
+        <div class="note">3/10</div>
+        <div class="description">Palworld é um dos jogos mais populares de 2024, disponível para Palworld.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Marvel Rivals">
+      <div class="game-info">
+        <h2>Marvel Rivals</h2>
+        <div class="note">6/10</div>
+        <div class="description">Marvel Rivals é um dos jogos mais populares de 2024, disponível para Marvel Rivals.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Helldivers 2">
+      <div class="game-info">
+        <h2>Helldivers 2</h2>
+        <div class="note">3/10</div>
+        <div class="description">Helldivers 2 é um dos jogos mais populares de 2024, disponível para Helldivers 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Schedule 1">
+      <div class="game-info">
+        <h2>Schedule 1</h2>
+        <div class="note">7/10</div>
+        <div class="description">Schedule 1 é um dos jogos mais populares de 2024, disponível para Schedule 1.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Fortnite">
+      <div class="game-info">
+        <h2>Fortnite</h2>
+        <div class="note">5/10</div>
+        <div class="description">Fortnite é um dos jogos mais populares de 2024, disponível para Fortnite.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Minecraft">
+      <div class="game-info">
+        <h2>Minecraft</h2>
+        <div class="note">7/10</div>
+        <div class="description">Minecraft é um dos jogos mais populares de 2024, disponível para Minecraft.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Roblox">
+      <div class="game-info">
+        <h2>Roblox</h2>
+        <div class="note">1/10</div>
+        <div class="description">Roblox é um dos jogos mais populares de 2024, disponível para Roblox.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="League of Legends">
+      <div class="game-info">
+        <h2>League of Legends</h2>
+        <div class="note">3/10</div>
+        <div class="description">League of Legends é um dos jogos mais populares de 2024, disponível para League of Legends.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Black Myth: Wukong">
+      <div class="game-info">
+        <h2>Black Myth: Wukong</h2>
+        <div class="note">4/10</div>
+        <div class="description">Black Myth: Wukong é um dos jogos mais populares de 2024, disponível para Black Myth: Wukong.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Roblox">
+      <div class="game-info">
+        <h2>Roblox</h2>
+        <div class="note">3/10</div>
+        <div class="description">Roblox é um dos jogos mais populares de 2024, disponível para Roblox.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Candy Crush Saga">
+      <div class="game-info">
+        <h2>Candy Crush Saga</h2>
+        <div class="note">3/10</div>
+        <div class="description">Candy Crush Saga é um dos jogos mais populares de 2024, disponível para Candy Crush Saga.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Free Fire">
+      <div class="game-info">
+        <h2>Free Fire</h2>
+        <div class="note">4/10</div>
+        <div class="description">Free Fire é um dos jogos mais populares de 2024, disponível para Free Fire.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="PUBG Mobile">
+      <div class="game-info">
+        <h2>PUBG Mobile</h2>
+        <div class="note">8/10</div>
+        <div class="description">PUBG Mobile é um dos jogos mais populares de 2024, disponível para PUBG Mobile.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Royal Match">
+      <div class="game-info">
+        <h2>Royal Match</h2>
+        <div class="note">1/10</div>
+        <div class="description">Royal Match é um dos jogos mais populares de 2024, disponível para Royal Match.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Honkai: Star Rail">
+      <div class="game-info">
+        <h2>Honkai: Star Rail</h2>
+        <div class="note">3/10</div>
+        <div class="description">Honkai: Star Rail é um dos jogos mais populares de 2024, disponível para Honkai: Star Rail.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Brawl Stars">
+      <div class="game-info">
+        <h2>Brawl Stars</h2>
+        <div class="note">10/10</div>
+        <div class="description">Brawl Stars é um dos jogos mais populares de 2024, disponível para Brawl Stars.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Honor of Kings">
+      <div class="game-info">
+        <h2>Honor of Kings</h2>
+        <div class="note">2/10</div>
+        <div class="description">Honor of Kings é um dos jogos mais populares de 2024, disponível para Honor of Kings.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Genshin Impact">
+      <div class="game-info">
+        <h2>Genshin Impact</h2>
+        <div class="note">3/10</div>
+        <div class="description">Genshin Impact é um dos jogos mais populares de 2024, disponível para Genshin Impact.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Pokémon Go">
+      <div class="game-info">
+        <h2>Pokémon Go</h2>
+        <div class="note">9/10</div>
+        <div class="description">Pokémon Go é um dos jogos mais populares de 2024, disponível para Pokémon Go.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Monster Strike">
+      <div class="game-info">
+        <h2>Monster Strike</h2>
+        <div class="note">2/10</div>
+        <div class="description">Monster Strike é um dos jogos mais populares de 2024, disponível para Monster Strike.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Clash of Clans">
+      <div class="game-info">
+        <h2>Clash of Clans</h2>
+        <div class="note">2/10</div>
+        <div class="description">Clash of Clans é um dos jogos mais populares de 2024, disponível para Clash of Clans.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Clash Royale">
+      <div class="game-info">
+        <h2>Clash Royale</h2>
+        <div class="note">5/10</div>
+        <div class="description">Clash Royale é um dos jogos mais populares de 2024, disponível para Clash Royale.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Subway Surfers">
+      <div class="game-info">
+        <h2>Subway Surfers</h2>
+        <div class="note">10/10</div>
+        <div class="description">Subway Surfers é um dos jogos mais populares de 2024, disponível para Subway Surfers.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Hill Climb Racing">
+      <div class="game-info">
+        <h2>Hill Climb Racing</h2>
+        <div class="note">7/10</div>
+        <div class="description">Hill Climb Racing é um dos jogos mais populares de 2024, disponível para Hill Climb Racing.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Temple Run 2">
+      <div class="game-info">
+        <h2>Temple Run 2</h2>
+        <div class="note">3/10</div>
+        <div class="description">Temple Run 2 é um dos jogos mais populares de 2024, disponível para Temple Run 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="My Talking Tom">
+      <div class="game-info">
+        <h2>My Talking Tom</h2>
+        <div class="note">7/10</div>
+        <div class="description">My Talking Tom é um dos jogos mais populares de 2024, disponível para My Talking Tom.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="8 Ball Pool">
+      <div class="game-info">
+        <h2>8 Ball Pool</h2>
+        <div class="note">1/10</div>
+        <div class="description">8 Ball Pool é um dos jogos mais populares de 2024, disponível para 8 Ball Pool.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Ludo King">
+      <div class="game-info">
+        <h2>Ludo King</h2>
+        <div class="note">1/10</div>
+        <div class="description">Ludo King é um dos jogos mais populares de 2024, disponível para Ludo King.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Angry Birds">
+      <div class="game-info">
+        <h2>Angry Birds</h2>
+        <div class="note">8/10</div>
+        <div class="description">Angry Birds é um dos jogos mais populares de 2024, disponível para Angry Birds.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Fishdom">
+      <div class="game-info">
+        <h2>Fishdom</h2>
+        <div class="note">5/10</div>
+        <div class="description">Fishdom é um dos jogos mais populares de 2024, disponível para Fishdom.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Township">
+      <div class="game-info">
+        <h2>Township</h2>
+        <div class="note">6/10</div>
+        <div class="description">Township é um dos jogos mais populares de 2024, disponível para Township.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Coin Master">
+      <div class="game-info">
+        <h2>Coin Master</h2>
+        <div class="note">4/10</div>
+        <div class="description">Coin Master é um dos jogos mais populares de 2024, disponível para Coin Master.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Whiteout Survival">
+      <div class="game-info">
+        <h2>Whiteout Survival</h2>
+        <div class="note">3/10</div>
+        <div class="description">Whiteout Survival é um dos jogos mais populares de 2024, disponível para Whiteout Survival.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="eFootball™">
+      <div class="game-info">
+        <h2>eFootball™</h2>
+        <div class="note">5/10</div>
+        <div class="description">eFootball™ é um dos jogos mais populares de 2024, disponível para eFootball™.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="MONOPOLY GO!">
+      <div class="game-info">
+        <h2>MONOPOLY GO!</h2>
+        <div class="note">2/10</div>
+        <div class="description">MONOPOLY GO! é um dos jogos mais populares de 2024, disponível para MONOPOLY GO!.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Last War: Survival">
+      <div class="game-info">
+        <h2>Last War: Survival</h2>
+        <div class="note">7/10</div>
+        <div class="description">Last War: Survival é um dos jogos mais populares de 2024, disponível para Last War: Survival.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Call of Duty: Mobile">
+      <div class="game-info">
+        <h2>Call of Duty: Mobile</h2>
+        <div class="note">5/10</div>
+        <div class="description">Call of Duty: Mobile é um dos jogos mais populares de 2024, disponível para Call of Duty: Mobile.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Gardenscapes">
+      <div class="game-info">
+        <h2>Gardenscapes</h2>
+        <div class="note">7/10</div>
+        <div class="description">Gardenscapes é um dos jogos mais populares de 2024, disponível para Gardenscapes.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Candy Crush Soda Saga">
+      <div class="game-info">
+        <h2>Candy Crush Soda Saga</h2>
+        <div class="note">2/10</div>
+        <div class="description">Candy Crush Soda Saga é um dos jogos mais populares de 2024, disponível para Candy Crush Soda Saga.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Evony: The King’s Return">
+      <div class="game-info">
+        <h2>Evony: The King’s Return</h2>
+        <div class="note">6/10</div>
+        <div class="description">Evony: The King’s Return é um dos jogos mais populares de 2024, disponível para Evony: The King’s Return.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Drag Racing Classic">
+      <div class="game-info">
+        <h2>Drag Racing Classic</h2>
+        <div class="note">7/10</div>
+        <div class="description">Drag Racing Classic é um dos jogos mais populares de 2024, disponível para Drag Racing Classic.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Marvel: Avengers Alliance">
+      <div class="game-info">
+        <h2>Marvel: Avengers Alliance</h2>
+        <div class="note">7/10</div>
+        <div class="description">Marvel: Avengers Alliance é um dos jogos mais populares de 2024, disponível para Marvel: Avengers Alliance.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Punch Quest">
+      <div class="game-info">
+        <h2>Punch Quest</h2>
+        <div class="note">10/10</div>
+        <div class="description">Punch Quest é um dos jogos mais populares de 2024, disponível para Punch Quest.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Plants vs Zombies">
+      <div class="game-info">
+        <h2>Plants vs Zombies</h2>
+        <div class="note">2/10</div>
+        <div class="description">Plants vs Zombies é um dos jogos mais populares de 2024, disponível para Plants vs Zombies.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Temple Run">
+      <div class="game-info">
+        <h2>Temple Run</h2>
+        <div class="note">3/10</div>
+        <div class="description">Temple Run é um dos jogos mais populares de 2024, disponível para Temple Run.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Pou">
+      <div class="game-info">
+        <h2>Pou</h2>
+        <div class="note">2/10</div>
+        <div class="description">Pou é um dos jogos mais populares de 2024, disponível para Pou.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="My Talking Angela">
+      <div class="game-info">
+        <h2>My Talking Angela</h2>
+        <div class="note">7/10</div>
+        <div class="description">My Talking Angela é um dos jogos mais populares de 2024, disponível para My Talking Angela.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="CATS: Crash Arena Turbo Stars">
+      <div class="game-info">
+        <h2>CATS: Crash Arena Turbo Stars</h2>
+        <div class="note">10/10</div>
+        <div class="description">CATS: Crash Arena Turbo Stars é um dos jogos mais populares de 2024, disponível para CATS: Crash Arena Turbo Stars.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Boom Beach">
+      <div class="game-info">
+        <h2>Boom Beach</h2>
+        <div class="note">8/10</div>
+        <div class="description">Boom Beach é um dos jogos mais populares de 2024, disponível para Boom Beach.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Bubble Witch 2 Saga">
+      <div class="game-info">
+        <h2>Bubble Witch 2 Saga</h2>
+        <div class="note">1/10</div>
+        <div class="description">Bubble Witch 2 Saga é um dos jogos mais populares de 2024, disponível para Bubble Witch 2 Saga.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Trivia Crack">
+      <div class="game-info">
+        <h2>Trivia Crack</h2>
+        <div class="note">2/10</div>
+        <div class="description">Trivia Crack é um dos jogos mais populares de 2024, disponível para Trivia Crack.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Angry Birds Friends">
+      <div class="game-info">
+        <h2>Angry Birds Friends</h2>
+        <div class="note">9/10</div>
+        <div class="description">Angry Birds Friends é um dos jogos mais populares de 2024, disponível para Angry Birds Friends.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Hay Day">
+      <div class="game-info">
+        <h2>Hay Day</h2>
+        <div class="note">6/10</div>
+        <div class="description">Hay Day é um dos jogos mais populares de 2024, disponível para Hay Day.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Angry Birds 2">
+      <div class="game-info">
+        <h2>Angry Birds 2</h2>
+        <div class="note">5/10</div>
+        <div class="description">Angry Birds 2 é um dos jogos mais populares de 2024, disponível para Angry Birds 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Angry Birds Go!">
+      <div class="game-info">
+        <h2>Angry Birds Go!</h2>
+        <div class="note">2/10</div>
+        <div class="description">Angry Birds Go! é um dos jogos mais populares de 2024, disponível para Angry Birds Go!.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Crossy Road">
+      <div class="game-info">
+        <h2>Crossy Road</h2>
+        <div class="note">4/10</div>
+        <div class="description">Crossy Road é um dos jogos mais populares de 2024, disponível para Crossy Road.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Slither.io">
+      <div class="game-info">
+        <h2>Slither.io</h2>
+        <div class="note">3/10</div>
+        <div class="description">Slither.io é um dos jogos mais populares de 2024, disponível para Slither.io.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Sonic Dash">
+      <div class="game-info">
+        <h2>Sonic Dash</h2>
+        <div class="note">1/10</div>
+        <div class="description">Sonic Dash é um dos jogos mais populares de 2024, disponível para Sonic Dash.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="World of Tanks Blitz">
+      <div class="game-info">
+        <h2>World of Tanks Blitz</h2>
+        <div class="note">8/10</div>
+        <div class="description">World of Tanks Blitz é um dos jogos mais populares de 2024, disponível para World of Tanks Blitz.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Modern Combat 5">
+      <div class="game-info">
+        <h2>Modern Combat 5</h2>
+        <div class="note">10/10</div>
+        <div class="description">Modern Combat 5 é um dos jogos mais populares de 2024, disponível para Modern Combat 5.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="SimCity BuildIt">
+      <div class="game-info">
+        <h2>SimCity BuildIt</h2>
+        <div class="note">4/10</div>
+        <div class="description">SimCity BuildIt é um dos jogos mais populares de 2024, disponível para SimCity BuildIt.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Die Sims FreiSpiel">
+      <div class="game-info">
+        <h2>Die Sims FreiSpiel</h2>
+        <div class="note">8/10</div>
+        <div class="description">Die Sims FreiSpiel é um dos jogos mais populares de 2024, disponível para Die Sims FreiSpiel.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Animal Crossing Pocket Camp">
+      <div class="game-info">
+        <h2>Animal Crossing Pocket Camp</h2>
+        <div class="note">2/10</div>
+        <div class="description">Animal Crossing Pocket Camp é um dos jogos mais populares de 2024, disponível para Animal Crossing Pocket Camp.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Piano Tiles 2">
+      <div class="game-info">
+        <h2>Piano Tiles 2</h2>
+        <div class="note">7/10</div>
+        <div class="description">Piano Tiles 2 é um dos jogos mais populares de 2024, disponível para Piano Tiles 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Flow Free">
+      <div class="game-info">
+        <h2>Flow Free</h2>
+        <div class="note">8/10</div>
+        <div class="description">Flow Free é um dos jogos mais populares de 2024, disponível para Flow Free.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Zombie Tsunami">
+      <div class="game-info">
+        <h2>Zombie Tsunami</h2>
+        <div class="note">7/10</div>
+        <div class="description">Zombie Tsunami é um dos jogos mais populares de 2024, disponível para Zombie Tsunami.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Magic Tiles 3">
+      <div class="game-info">
+        <h2>Magic Tiles 3</h2>
+        <div class="note">3/10</div>
+        <div class="description">Magic Tiles 3 é um dos jogos mais populares de 2024, disponível para Magic Tiles 3.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Real Racing 3">
+      <div class="game-info">
+        <h2>Real Racing 3</h2>
+        <div class="note">9/10</div>
+        <div class="description">Real Racing 3 é um dos jogos mais populares de 2024, disponível para Real Racing 3.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="RollerKing Tour">
+      <div class="game-info">
+        <h2>RollerKing Tour</h2>
+        <div class="note">7/10</div>
+        <div class="description">RollerKing Tour é um dos jogos mais populares de 2024, disponível para RollerKing Tour.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Tile Blast">
+      <div class="game-info">
+        <h2>Tile Blast</h2>
+        <div class="note">10/10</div>
+        <div class="description">Tile Blast é um dos jogos mais populares de 2024, disponível para Tile Blast.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="TwoDots">
+      <div class="game-info">
+        <h2>TwoDots</h2>
+        <div class="note">3/10</div>
+        <div class="description">TwoDots é um dos jogos mais populares de 2024, disponível para TwoDots.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Red Ball 4">
+      <div class="game-info">
+        <h2>Red Ball 4</h2>
+        <div class="note">10/10</div>
+        <div class="description">Red Ball 4 é um dos jogos mais populares de 2024, disponível para Red Ball 4.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Traffic Rider">
+      <div class="game-info">
+        <h2>Traffic Rider</h2>
+        <div class="note">2/10</div>
+        <div class="description">Traffic Rider é um dos jogos mais populares de 2024, disponível para Traffic Rider.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Knife Hit">
+      <div class="game-info">
+        <h2>Knife Hit</h2>
+        <div class="note">5/10</div>
+        <div class="description">Knife Hit é um dos jogos mais populares de 2024, disponível para Knife Hit.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Geometry Dash Lite">
+      <div class="game-info">
+        <h2>Geometry Dash Lite</h2>
+        <div class="note">1/10</div>
+        <div class="description">Geometry Dash Lite é um dos jogos mais populares de 2024, disponível para Geometry Dash Lite.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Geometry Dash World">
+      <div class="game-info">
+        <h2>Geometry Dash World</h2>
+        <div class="note">6/10</div>
+        <div class="description">Geometry Dash World é um dos jogos mais populares de 2024, disponível para Geometry Dash World.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Geometry Dash Meltdown">
+      <div class="game-info">
+        <h2>Geometry Dash Meltdown</h2>
+        <div class="note">10/10</div>
+        <div class="description">Geometry Dash Meltdown é um dos jogos mais populares de 2024, disponível para Geometry Dash Meltdown.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Block! Hexa Puzzle">
+      <div class="game-info">
+        <h2>Block! Hexa Puzzle</h2>
+        <div class="note">1/10</div>
+        <div class="description">Block! Hexa Puzzle é um dos jogos mais populares de 2024, disponível para Block! Hexa Puzzle.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Goodgame Empire">
+      <div class="game-info">
+        <h2>Goodgame Empire</h2>
+        <div class="note">10/10</div>
+        <div class="description">Goodgame Empire é um dos jogos mais populares de 2024, disponível para Goodgame Empire.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Flip Diving">
+      <div class="game-info">
+        <h2>Flip Diving</h2>
+        <div class="note">8/10</div>
+        <div class="description">Flip Diving é um dos jogos mais populares de 2024, disponível para Flip Diving.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Traffic Rider">
+      <div class="game-info">
+        <h2>Traffic Rider</h2>
+        <div class="note">7/10</div>
+        <div class="description">Traffic Rider é um dos jogos mais populares de 2024, disponível para Traffic Rider.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Minecraft Dungeons">
+      <div class="game-info">
+        <h2>Minecraft Dungeons</h2>
+        <div class="note">10/10</div>
+        <div class="description">Minecraft Dungeons é um dos jogos mais populares de 2024, disponível para Minecraft Dungeons.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Starfield">
+      <div class="game-info">
+        <h2>Starfield</h2>
+        <div class="note">7/10</div>
+        <div class="description">Starfield é um dos jogos mais populares de 2024, disponível para Starfield.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Assassin’s Creed Shadows">
+      <div class="game-info">
+        <h2>Assassin’s Creed Shadows</h2>
+        <div class="note">8/10</div>
+        <div class="description">Assassin’s Creed Shadows é um dos jogos mais populares de 2024, disponível para Assassin’s Creed Shadows.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Dragon Age: The Veilguard">
+      <div class="game-info">
+        <h2>Dragon Age: The Veilguard</h2>
+        <div class="note">9/10</div>
+        <div class="description">Dragon Age: The Veilguard é um dos jogos mais populares de 2024, disponível para Dragon Age: The Veilguard.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Final Fantasy VII Rebirth">
+      <div class="game-info">
+        <h2>Final Fantasy VII Rebirth</h2>
+        <div class="note">10/10</div>
+        <div class="description">Final Fantasy VII Rebirth é um dos jogos mais populares de 2024, disponível para Final Fantasy VII Rebirth.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Astro Bot">
+      <div class="game-info">
+        <h2>Astro Bot</h2>
+        <div class="note">9/10</div>
+        <div class="description">Astro Bot é um dos jogos mais populares de 2024, disponível para Astro Bot.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Black Myth: Wukong">
+      <div class="game-info">
+        <h2>Black Myth: Wukong</h2>
+        <div class="note">1/10</div>
+        <div class="description">Black Myth: Wukong é um dos jogos mais populares de 2024, disponível para Black Myth: Wukong.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Helldivers 2">
+      <div class="game-info">
+        <h2>Helldivers 2</h2>
+        <div class="note">7/10</div>
+        <div class="description">Helldivers 2 é um dos jogos mais populares de 2024, disponível para Helldivers 2.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Palworld">
+      <div class="game-info">
+        <h2>Palworld</h2>
+        <div class="note">5/10</div>
+        <div class="description">Palworld é um dos jogos mais populares de 2024, disponível para Palworld.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Schedule 1">
+      <div class="game-info">
+        <h2>Schedule 1</h2>
+        <div class="note">2/10</div>
+        <div class="description">Schedule 1 é um dos jogos mais populares de 2024, disponível para Schedule 1.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Xbox Game Pass – vários títulos">
+      <div class="game-info">
+        <h2>Xbox Game Pass – vários títulos</h2>
+        <div class="note">6/10</div>
+        <div class="description">Xbox Game Pass – vários títulos é um dos jogos mais populares de 2024, disponível para Xbox Game Pass – vários títulos.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Marvel Rivals">
+      <div class="game-info">
+        <h2>Marvel Rivals</h2>
+        <div class="note">4/10</div>
+        <div class="description">Marvel Rivals é um dos jogos mais populares de 2024, disponível para Marvel Rivals.</div>
+      </div>
+    </div>
+    
+    <div class="game">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Last War: Survival">
+      <div class="game-info">
+        <h2>Last War: Survival</h2>
+        <div class="note">6/10</div>
+        <div class="description">Last War: Survival é um dos jogos mais populares de 2024, disponível para Last War: Survival.</div>
+      </div>
+    </div>
+    
+    </div>
+    <div class="placeholder-box">
+      Utilize a barra de pesquisa acima para explorar os jogos por nome ou dificuldade.
+    </div>
+  </div>
+
+  <script>
+    function searchGames() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const games = document.querySelectorAll(".game-list .game");
+
+      games.forEach(game => {
+        const title = game.querySelector("h2").textContent.toLowerCase();
+        if (title.includes(input)) {
+          game.style.display = "flex";
+        } else {
+          game.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+  <!-- Botão e formulário flutuante -->
+  <style>
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #d4af37;
+      color: #000;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .floating-form {
+      display: none;
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      width: 280px;
+      background-color: #fff8dc;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .floating-form input,
+    .floating-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .floating-form button {
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+  <button class="floating-button" onclick="toggleForm()">Fale conosco</button>
+
+  <div class="floating-form" id="contactForm">
+    <form action="https://formsubmit.co/contact.1valete@gmail.com" method="POST">
+      <label for="email">Seu e-mail:</label>
+      <input type="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea name="message" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    function toggleForm() {
+      var form = document.getElementById("contactForm");
+      if (form.style.display === "block") {
+        form.style.display = "none";
+      } else {
+        form.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
